@@ -1,0 +1,298 @@
+html {
+    font-size: 22px; 
+}
+
+
+
+
+body { 
+    height: 100vh;
+    background-image: url("images/books.jpg");
+    background-attachment: fixed;
+    overflow: scroll;
+    color : white;
+
+}
+#roug {
+  color: red;
+}
+
+body.done {
+  color: #02c712;
+    background-repeat: no-repeat;
+    height: auto ;
+
+}
+body.page1 {
+    background-repeat: no-repeat;
+    height: auto ;
+   
+  }
+
+  
+  
+  body.login {
+    background-repeat: no-repeat;
+    height: 50%;
+    width: auto; 
+    
+  }
+    
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  a {
+   color: aliceblue;
+
+  }
+  a:visited {
+    color: lightgray;
+
+  }
+  a:hover, a:active {
+    color: #eee;
+  }
+  
+
+   /*animation of preter/checker/rechercher*/ 
+  .recherche {
+    display: inline-flex;
+    align-items: center;
+    background-image: linear-gradient(45deg, #dfcd00, #c50000);
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .recherche :is(input, button) {
+    background: transparent;
+    color: inherit;
+    border: none;
+    outline: none;
+  }
+  .recherche__input {
+    width: 0;
+    transition: width 0.5s;
+  }
+  .recherche__button {
+    display: grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: color 0.000000000000000001ns;
+  }
+  .recherche__button:hover {
+    color: #e3e3e3;
+  }
+  .recherche:focus-within input {
+    width: 200px;
+  }
+  ::placeholder {
+    font: inherit;
+    color: #e3e3e3;
+  }
+
+
+
+  
+  
+
+  
+  /*boutons*/
+  .title {
+    position: relative;
+  }
+  .title__alternate {
+    display: inline;
+    margin-left: 10px;
+  }
+  .title__alternate span {
+    position: absolute;
+    width: max-content;
+    background-color: #c35800;
+    padding-inline: 10px;
+    opacity: 0;
+    transform-origin: 10% 75%;
+    animation: rotateWords 9s var(--d) linear infinite;
+  }
+  @keyframes rotateWords {
+    5% {
+      opacity: 1;
+    }
+    10%,
+    20% {
+      opacity: 1;
+      transform: rotate(3deg);
+    }
+    15% {
+      transform: rotate(-1deg);
+    }
+    25% {
+      opacity: 0;
+      transform: translateY(90px) rotate(10deg);
+    }
+  }
+
+
+  
+/**/
+
+
+
+
+ /* social media */
+  .icons {
+    display: flex;
+    column-gap: 25px;
+  }
+  .icon {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+  }
+  .icon:hover {
+    outline-offset: 4px;
+  }
+  .icon i {
+    margin: auto;
+  }
+  .icon:hover i {
+    animation: shake 0.25s;
+  }
+  .icon--instagram:hover {
+    background-image: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    outline-color: #a02d76;
+  }
+  .icon--twitter:hover {
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+  }
+  .icon--linkedin:hover {
+    background-color: #0077b5;
+    outline-color: #0077b5;
+  }
+  .icon--facebook:hover {
+    background-color: #006dcc;
+    outline-color: #3b5998;
+  }
+  @keyframes shake {
+    10% {
+      transform: rotate(15deg);
+    }
+    20% {
+      transform: rotate(-15deg);
+    }
+    30% {
+      transform: rotate(15deg);
+    }
+    40% {
+      transform: rotate(-15deg);
+    }
+  }
+  /*S.M*/
+
+
+
+  /*enter form*/
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+  .button2 {
+    position: relative;
+    display: inline-block;
+    width: 4.5rem;
+    height: 2.0rem;
+    background-image: linear-gradient(90deg, #c7a302, #c50000);
+    color: #090909;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition-property: width, border-radius;
+    transition-duration: 0.25s;
+    transition-delay: 0.5s;
+}
+.button3 {
+  position: relative;
+  display: inline-block;
+  width: 4.5rem;
+  height: 2.0rem;
+  background-image: linear-gradient(90deg, #00ff91, #0eb521);
+  color: #090909;
+  border: none;
+  border-radius: 5.4rem;
+  cursor: pointer;
+  transition-property: width, border-radius;
+  transition-duration: 0.25s;
+  transition-delay: 0.5s;
+}
+.button4 {
+  position: relative;
+  display: inline-block;
+  width: 20.5rem;
+  height: 3.0rem;
+  background-image: linear-gradient(90deg, #00ff91, #0eb521);
+  color: whitesmoke;
+  border: none;
+  border-radius: 2.4rem;
+  cursor: pointer;
+  transition-property: width, border-radius;
+  transition-duration: 0.25s;
+  transition-delay: 0.5s;
+}
+  .button2:focus {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.button2 > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    transition: opacity 0.25s;
+}
+
+.button2 span {
+    transition-delay: 0.75s;
+}
+.button2 i {
+    font-size: 2rem;
+    opacity: 0;
+}
+.button2:focus span {
+    opacity: 0;
+    transition-delay: 0.15s;
+}
+.button2:focus i {
+    opacity: 1;
+    transition-delay: 0.75s;
+}
+
