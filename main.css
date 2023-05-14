@@ -28,6 +28,13 @@ body.page1 {
     height: auto ;
    
   }
+#my-text {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: left;
+}
 
   
   
