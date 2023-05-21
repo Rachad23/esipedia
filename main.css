@@ -11,7 +11,7 @@ body {
     background-image: url("images/whitedesk2.jpg");
     background-attachment: fixed;
     overflow: scroll;
-    color : rgb(0, 0, 0);
+    color : whitesmoke;
     
 
 }
@@ -245,7 +245,7 @@ body.page1 {
     width: 4.5rem;
     height: 2.0rem;
     background-image: linear-gradient(35deg,   #080074, #181818);
-    color: #090909;
+    color: whitesmoke;
     border: none;
     border-radius: 0.4rem;
     cursor: pointer;
@@ -265,7 +265,7 @@ body.page1 {
   width: 4.5rem;
   height: 2.0rem;
   background-image: linear-gradient(90deg,  #080074, #181818);
-  color: #090909;
+  color: whitesmoke;
   border: none;
   border-radius: 5.4rem;
   cursor: pointer;
